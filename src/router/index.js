@@ -1,8 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Pokedex from '../components/Pokedex.vue'; // Ajuste de caminho
+import StartScreen from '../components/StartScreen.vue';
+import Pokedex from '../components/Pokedex.vue';
+import Lista from '../components/Lista.vue';
 
 const routes = [
-  { path: '/', component: Pokedex }
+  { path: '/', component: StartScreen },
+  { path: '/pokedex', component: Pokedex },
+  { path: '/lista', component: Lista },
 ];
 
 const router = createRouter({
